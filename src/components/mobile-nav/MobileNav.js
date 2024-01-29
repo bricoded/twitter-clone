@@ -3,7 +3,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
 import './mobile-nav.css'
 
 const MobileNav = () => {
@@ -16,7 +16,7 @@ const MobileNav = () => {
         <SearchIcon />
       </div>
       <div className='icon-holder'>
-        <MoreHorizIcon />
+        <PeopleOutlineIcon />
       </div>
       <div className='icon-holder'>
         <NotificationsNoneIcon />

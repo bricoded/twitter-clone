@@ -77,6 +77,10 @@ button {
   outline: none;
 }
 
+.app .app--post-btn {
+  display: none ;
+}
+
 @media screen and (max-width: 1300px) {
   .app {
     max-width: 1000px;

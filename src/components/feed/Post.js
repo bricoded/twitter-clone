@@ -19,10 +19,7 @@ const Post = ({ displayName, verified, userName, timestamp, text, image, avatar 
       <div className='post--body'>
         <div className='post--header'>
           <div className='post--headerText'>
-            <h3>{displayName}</h3>
-            {verified && <VerifiedIcon className='verified' />}
-            <span>@{userName}</span>
-            <span>{timestamp}</span>
+            <h3>{displayName} {verified && <VerifiedIcon className='verified' />} <span>@{userName}</span> <span>{timestamp}</span></h3>
           </div>
           <div className='icon-holder'>
             <MoreHorizIcon />
@@ -32,7 +29,7 @@ const Post = ({ displayName, verified, userName, timestamp, text, image, avatar 
           {text}
         </div>
         <div className='post--image'>
-          <img src={`${image}`} alt={`${displayName}`} loading='lazy'/>
+          <img src={`${image}`} alt={`${displayName}`} loading='lazy' />
         </div>
         <div className='post--ctas'>
           <div className='post--cta blue'>

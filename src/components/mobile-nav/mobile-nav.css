@@ -4,11 +4,11 @@
   background-color: #000;
   bottom: 0;
   left: 0;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 40px;
+  padding: 0 10px;
   z-index: 4;
   border-top: 1px solid var(--twitter-border-color);
 }
@@ -20,7 +20,7 @@
 }
 
 .mobilenav--nav .icon-holder svg {
-  font-size: 25px !important;
+  font-size: 30px !important;
   color: #fff;
 }
 
@@ -30,4 +30,10 @@
 
 .mobilenav--nav .icon-holder:hover svg {
   color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .mobilenav--nav {
+    display: flex;
+  }
 }
