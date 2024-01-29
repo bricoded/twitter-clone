@@ -1,0 +1,92 @@
+hr {
+  height: .5px;
+  opacity: 0.2;
+  margin-bottom: 10px;
+}
+
+.widgets {
+  padding: 10px 20px 0;
+  /* background-color: var(--twitter-gray); */
+}
+
+.widgets--search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+  background-color: var(--twitter-gray);
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid var(--twitter-gray);
+}
+
+.widgets--search:focus-within{
+  border: 1px solid var(--twitter-blue);
+}
+
+.widgets--search svg {
+  font-size: 18px;
+}
+
+.widgets--search input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  font-size: 15px;
+}
+
+.widgets--premium {
+  background-color: var(--twitter-gray);
+  margin: 20px 0;
+  border-radius: 20px;
+  padding: 10px 15px 20px;
+}
+
+.widgets--premium h3 {
+  margin-bottom: 5px;
+  font-size: 21px;
+  letter-spacing: .5px;
+}
+
+.widgets--premium p {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.footer--nav-list{
+  list-style: none;
+  padding: 0;
+}
+
+.footer--nav-list li {
+  display: inline-block;
+  margin-right: 14px;
+}
+
+.footer--nav-list li a {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  color: var(--twitter-text-gray);
+  font-size: 13px;
+  transition: var(--twitter-background-transition);
+}
+
+.footer--nav-list li a:hover {
+  text-decoration: underline;
+}
+
+.footer--nav-list li a svg {
+  font-size: 11px;
+  line-height: 9px;
+}
+
+@media screen and (max-width: 1022px) {
+  .widgets {
+    display: none;
+  }
+}

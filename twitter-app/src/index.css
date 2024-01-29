@@ -1,0 +1,129 @@
+:root {
+  --twitter-gray: rgba(104, 104, 104, 0.363);
+  --twitter-text-gray: rgb(129, 135, 141);
+  --twitter-dark-gray: rgba(104, 104, 104, 0.603);
+  --twitter-black: rgb(0, 0, 0);
+  --twitter-blue: rgb(29, 155, 240);
+  --twitter-pink: rgb(255, 53, 114);
+  --twitter-green: rgb(0, 243, 162);
+  --twitter-border-color: rgb(47, 51, 54);
+  --twitter-background-transition: .3s ease-out;
+}
+
+* {
+  text-decoration: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000;
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  outline: none;
+}
+
+.app {
+  display: grid;
+  max-width: 1250px;
+  margin: auto;
+  grid-template-columns: 2.1fr 4.9fr 3fr;
+}
+
+.icon-holder {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--twitter-background-transition);
+}
+
+.icon-holder:hover {
+  background-color: rgba(29, 156, 240, 0.185);
+}
+
+.icon-holder:hover svg {
+  color: var(--twitter-blue);
+}
+
+.icon-holder svg {
+  transition: var(--twitter-background-transition);
+  font-size: 20px;
+  color: var(--twitter-text-gray);
+}
+
+.primary-button {
+  background-color: var(--twitter-blue) !important;
+  border-radius: 30px !important;
+  padding: 5px 20px !important;
+  color: #fff !important;
+  text-transform: capitalize !important;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .app {
+    max-width: 1000px;
+    grid-template-columns: 60px 575px auto;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .app {
+    max-width: 960px;
+    grid-template-columns: 60px 575px auto;
+  }
+}
+
+@media screen and (max-width: 1022px) {
+  .app {
+    max-width: 900px;
+    grid-template-columns: auto auto;
+  }
+  .css-17o22dy-MuiAvatar-root {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .app {
+    max-width: 900px;
+    grid-template-columns: auto;
+    position: relative;
+  }
+  .app .app--post-btn {
+    position: fixed;
+    right: 23px;
+    bottom: 60px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--twitter-blue);
+    border-radius: 50%;
+    box-shadow: 2px 2px 1px var(--twitter-blue);
+    cursor: pointer;
+  }
+
+  .app .app--post-btn svg {
+    font-size: 30px;
+  }
+}

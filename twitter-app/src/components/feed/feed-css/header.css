@@ -1,0 +1,57 @@
+.feed--header {
+  border-bottom: 1px solid var(--twitter-border-color);
+  background-color: rgba(0, 0, 0, 0.452);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.feed--header .icon-holder {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.header--pages {
+  display: flex;
+}
+
+.header--page-info svg.header--twitter-icon,
+.header--page-info div.header--avatar {
+  display: none !important;
+}
+
+.feed--header .icon-holder svg {
+  color: #fff;
+}
+
+@media screen and (max-width: 517px) {
+  .feed--header .icon-holder {
+    position: static;
+    transform: translateY(0px);
+  }
+
+  .header--page-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header--page-info svg.header--twitter-icon,
+  .header--page-info div.header--avatar {
+    display: inline-flex !important;
+  }
+  .header--page-info  {
+    padding: 12px 15px;
+  }
+  .header--page-info div.header--avatar {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}

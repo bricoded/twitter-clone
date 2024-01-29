@@ -1,0 +1,52 @@
+.sideBarUserInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: var(--twitter-background-transition);
+}
+
+.sideBarUserInfo:hover {
+  background-color: var(--twitter-gray);
+}
+
+.sideBarUserInfo > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sideBarUserInfo--avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(90, 90, 90);
+}
+
+.sideBarUserInfo h4 {
+  font-weight: 700;
+}
+
+.sideBarUserInfo h5 {
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  font-size: 15px;
+  color: var(--twitter-dark-gray);
+  letter-spacing: .5px;
+}
+
+@media screen and (max-width: 1300px) {
+  .sideBarUserInfo--info,  .sideBarUserInfo > svg{
+    display: none !important;
+  }
+  .sideBarUserInfo {
+    padding: 0;
+  }
+  .sideBarUserInfo  .css-17o22dy-MuiAvatar-root, .sideBarUserInfo--avatar {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}

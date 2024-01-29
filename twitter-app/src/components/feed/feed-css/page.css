@@ -1,0 +1,26 @@
+.page {
+  height: 50px;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: var(--twitter-background-transition);
+  width: 50%;
+  text-align: center;
+}
+
+.page:hover {
+  background: var(--twitter-gray);
+}
+
+.page p {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  color: var(--twitter-text-gray);
+  font-size: 15px;
+}
+
+.page--active p{
+  border-bottom: 3px solid var(--twitter-blue);
+  font-weight: 600;
+  color: rgb(231, 233, 234);
+}

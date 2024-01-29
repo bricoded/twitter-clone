@@ -1,0 +1,93 @@
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 50px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.sideBar .icon-holder{
+  display: none !important;
+}
+
+.sideBar>div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.sideBarOption--div {
+  margin-bottom: 30px;
+}
+
+.sideBar--logo {
+  margin: 5px 0px 15px;
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: var(--twitter-background-transition);
+}
+
+.sideBar--logo:hover {
+  background-color: var(--twitter-gray);
+}
+
+.sideBar--logo svg {
+  font-size: 33px;
+  cursor: pointer;
+}
+
+.sideBar--post-btn {
+  background-color: var(--twitter-blue) !important;
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px !important;
+  color: #fff !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  padding: 15px !important;
+  border-radius: 35px !important;
+  line-height: 1 !important;
+  text-transform: capitalize !important;
+}
+
+
+@media screen and (max-width: 1300px) {
+  .sideBar {
+    padding-right: 0;
+  }
+  .sideBarOption--div {
+    margin-bottom: 10px;
+  }
+  .sideBar--post-btn {
+    display: none !important;
+  }
+  .sideBar .icon-holder {
+    display: flex !important;
+    width: 50px;
+    height: 50px;
+    background-color: var(--twitter-blue);
+    cursor: pointer;
+  }
+  .sideBar .icon-holder:hover svg {
+    color: #fff;
+  }
+  .sideBar .icon-holder svg {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1022px) {
+  .sideBar {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sideBar {
+    display: none;
+  }
+}
