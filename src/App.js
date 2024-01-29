@@ -3,7 +3,7 @@ import SideBar from './components/side-bar/SideBar'
 import Widgets from './components/widgets/Widgets'
 import Feed from './components/feed/Feed'
 import SpaOutlinedIcon from '@mui/icons-material/SpaOutlined';
-import MobileNav from './components/mobile-nav/MobileNav';
+import MobileNav from './components/mobile/MobileNav';
 
 const App = () => {
   return (

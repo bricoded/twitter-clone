@@ -15,6 +15,7 @@
 .post--header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .post--header .verified {
@@ -26,6 +27,7 @@
   display: flex;
   align-items: center;
   font-size: 15px;
+  gap: 2px;
 }
 
 .post--headerText h3:hover {
@@ -136,11 +138,22 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) { 
+  .post--headerText {
+    display: inline-block;
+    width: 90%;
+    overflow-x: hidden;
+  }
+  .post--headerText h3 {
+    text-wrap: nowrap;
+  }
   .post--headerText span {
     font-size: 13px;
   }
   .post--cta-stat {
     font-size: 11px;
+  } 
+  .post--description {
+    font-size: 14px;
   }
 }
