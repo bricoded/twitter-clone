@@ -8,6 +8,7 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import EqualizerOutlinedIcon from '@mui/icons-material/EqualizerOutlined';
 import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
 import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
+import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import './feed-css/post.css';
 
 const Post = ({ displayName, verified, userName, timestamp, text, image, avatar }) => {
@@ -71,6 +72,9 @@ const Post = ({ displayName, verified, userName, timestamp, text, image, avatar 
             <div className='icon-holder'>
               <FileUploadOutlinedIcon />
             </div>
+          </div>
+          <div className='icon-holder mobile'>
+            <ShareOutlinedIcon />
           </div>
         </div>
       </div>

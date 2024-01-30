@@ -8,6 +8,7 @@
   --twitter-green: rgb(0, 243, 162);
   --twitter-border-color: rgb(47, 51, 54);
   --twitter-background-transition: .3s ease-out;
+  --twitter-white: #E7E9EA;
 }
 
 * {
@@ -24,7 +25,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #000;
-  color: #fff;
+  color: var(--twitter-white);
 }
 
 code {
@@ -61,6 +62,10 @@ button {
   color: var(--twitter-blue);
 }
 
+.icon-holder.mobile {
+  display: none;
+}
+
 .icon-holder svg {
   transition: var(--twitter-background-transition);
   font-size: 20px;
@@ -71,7 +76,7 @@ button {
   background-color: var(--twitter-blue) !important;
   border-radius: 30px !important;
   padding: 5px 20px !important;
-  color: #fff !important;
+  color: var(--twitter-white) !important;
   text-transform: capitalize !important;
   border: none;
   outline: none;
@@ -129,5 +134,9 @@ button {
 
   .app .app--post-btn svg {
     font-size: 30px;
+  }
+
+  .icon-holder.mobile {
+    display: flex;
   }
 }

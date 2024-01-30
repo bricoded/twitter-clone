@@ -45,7 +45,7 @@
   background-color: var(--twitter-blue) !important;
   border: none !important;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px !important;
-  color: #fff !important;
+  color: var(--twitter-white) !important;
   font-size: 17px !important;
   font-weight: 700 !important;
   padding: 15px !important;
@@ -73,7 +73,7 @@
     cursor: pointer;
   }
   .sideBar .icon-holder:hover svg {
-    color: #fff;
+    color: var(--twitter-white);
   }
   .sideBar .icon-holder svg {
     font-size: 30px;

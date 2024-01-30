@@ -156,4 +156,7 @@
   .post--description {
     font-size: 14px;
   }
+  .post--bookmark {
+    display: none;
+  }
 }

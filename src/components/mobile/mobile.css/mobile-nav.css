@@ -1,0 +1,39 @@
+.mobilenav--nav {
+  position: fixed;
+  height: 50px;
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+  z-index: 4;
+  border-top: 1px solid var(--twitter-border-color);
+}
+
+.mobilenav--nav .icon-holder {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.mobilenav--nav .icon-holder svg {
+  font-size: 30px !important;
+  color: var(--twitter-white);
+}
+
+.mobilenav--nav .icon-holder:hover {
+  background-color: var(--twitter-gray);
+}
+
+.mobilenav--nav .icon-holder:hover svg {
+  color: var(--twitter-white);
+}
+
+@media screen and (max-width: 500px) {
+  .mobilenav--nav {
+    display: flex;
+  }
+}

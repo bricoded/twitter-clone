@@ -5,6 +5,13 @@
   overflow-y: scroll;
 }
 
+.development {
+  padding: 10px;
+  text-align: center;
+  color: var(--twitter-text-gray);
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 500px) {
   .feed::-webkit-scrollbar {
     display: none;

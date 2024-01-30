@@ -1,0 +1,26 @@
+.mobile-sidebar-user {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.mobile-sidebar-user span {
+  color: var(--twitter-text-gray);
+  font-weight: 300;
+}
+
+.mobile-sidebar-user--displayName {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.mobile-sidebar-user--userName {
+  font-size: 15px;
+}
+
+.mobile-sidebar-user--stats {
+  display: flex;
+  font-size: 14px;
+  margin-top: 10px;
+  gap: 15px;
+}

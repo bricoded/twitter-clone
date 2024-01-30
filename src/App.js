@@ -3,7 +3,9 @@ import SideBar from './components/side-bar/SideBar'
 import Widgets from './components/widgets/Widgets'
 import Feed from './components/feed/Feed'
 import SpaOutlinedIcon from '@mui/icons-material/SpaOutlined';
+import MobileSidebar from './components/mobile/MobileSidebar';
 import MobileNav from './components/mobile/MobileNav';
+// import { TroubleshootSharp } from '@mui/icons-material';
 
 const App = () => {
   return (
@@ -18,6 +20,7 @@ const App = () => {
         <SpaOutlinedIcon />
       </div>
       <MobileNav />
+      <MobileSidebar />
     </div>
   )
 }

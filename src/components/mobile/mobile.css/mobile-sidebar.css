@@ -1,0 +1,65 @@
+.mobile-sidebar--container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 100%;
+  visibility: hidden;
+  transition: var(--twitter-background-transition);
+  transition-delay: .3s;
+}
+
+.mobile-sidebar--container.active {
+  visibility: visible;
+}
+
+.mobile-sidebar {
+  position: absolute;
+  background-color: #000;
+  height: 100%;
+  display: inline-block;
+  box-shadow: 1px 1px 10px #87d2f538;
+  left: -286px;
+  transition: var(--twitter-background-transition);
+}
+
+.mobile-sidebar.active {
+  left: 0;
+}
+
+.mobile-sidebar--overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #87d2f52c;
+  z-index: -1;
+  display: none;
+}
+
+.mobile-sidebar--overlay.active{
+  display: block;
+}
+
+.mobile-sidebar--option {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.mobile-sidebar--option h3 {
+  font-weight: 600;
+}
+
+.mobile-sidebar--option svg {
+  font-size: 28px;
+}
+
+@media screen and (min-width: 500px) {
+  .mobile-side-bar {
+    display: none;
+  }
+}
