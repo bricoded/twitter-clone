@@ -58,5 +58,6 @@
   .feed--header {
     backdrop-filter: blur(0px);
     background-color: black;
+    display: none;
   }
 }

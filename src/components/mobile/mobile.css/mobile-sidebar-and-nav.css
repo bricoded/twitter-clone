@@ -1,3 +1,7 @@
+.MobileSidebarAndNav  .feed--header {
+  display: block;
+}
+
 .mobile-sidebar--container {
   position: fixed;
   top: 0;
@@ -7,7 +11,6 @@
   width: 100%;
   visibility: hidden;
   transition: var(--twitter-background-transition);
-  transition-delay: .3s;
 }
 
 .mobile-sidebar--container.active {
@@ -60,6 +63,12 @@
 
 @media screen and (min-width: 500px) {
   .mobile-side-bar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .MobileSidebarAndNav {
     display: none;
   }
 }
